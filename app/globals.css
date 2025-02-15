@@ -19,3 +19,26 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Rocket animation */
+@keyframes flyUp {
+  0% {
+    transform: translateY(0); /* Starting position */
+  }
+  100% {
+    transform: translateY(-500px); /* End position */
+  }
+}
+
+.rocket-animation {
+  animation: flyUp 3s ease-in-out forwards;
+}
+
+.rocket {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 45%;
+  margin-right: 55%;
+}
